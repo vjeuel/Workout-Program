@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Ubuntu:300i,400,700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+   <title>Workout</title>
+</head>
+<body>
+   <!--***** HEADER *****-->
+   <header>
+      <div id="index-container">
+         <h1>workout</h1>
+         <div id="index-months">
+            <a href="/jan.html">January</a>
+            <a href="#feb">February</a>
+            <a href="#mar">March</a>
+            <a href="#apr">April</a>
+            <a href="#may">May</a>
+            <a href="#jun">June</a>
+            <a href="#jul">July</a>
+            <a href="#Aug">August</a>
+            <a href="#semp">September</a>
+            <a href="#oct">October</a>
+            <a href="#nov">November</a>
+            <a href="#dec">December</a>
+         </div>
+      </div>
+   </header>
+      
+  
+   <!--***** FOOTER *****-->
+   <footer>
+
+   </footer>
+   
+   <style>
+      @font-face {
+   font-family: 'Domine Normal';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src:  url(/fonts/Domine/Domine-Regular.ttf),
+         local('Domine'), local('Domine-Regular'), 
+         url(https://fonts.gstatic.com/s/domine/v7/L0x8DFMnlVwD4h3hu_qnZypEiw.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Domine Bold';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src:  url(/fonts/Domine/Domine-Bold.ttf),
+         local('Domine Bold'), local('Domine-Bold'), 
+         url(https://fonts.gstatic.com/s/domine/v7/L0x_DFMnlVwD4h3pAN-ySghJoXi-Xw.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Ubuntu Italic';
+   font-style: italic;
+   font-weight: 300;
+   font-display: swap;
+   src:  url(/fonts/Ubuntu/Ubuntu-LightItalic.ttf),
+         local('Ubuntu Light Italic'), local('Ubuntu-LightItalic'), 
+         url(https://fonts.gstatic.com/s/ubuntu/v14/4iCp6KVjbNBYlgoKejZftVyPN4FNgYUJ.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Ubuntu Normal';
+   font-style: normal;
+   font-weight: 400;
+   font-display: swap;
+   src:  url(/fonts/Ubuntu/Ubuntu-Regular.ttf),
+         local('Ubuntu Regular'), local('Ubuntu-Regular'), 
+         url(https://fonts.gstatic.com/s/ubuntu/v14/4iCs6KVjbNBYlgoKfw72nU6AFw.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+ @font-face {
+   font-family: 'Ubuntu Bold';
+   font-style: normal;
+   font-weight: 700;
+   font-display: swap;
+   src:  url(/fonts/Ubuntu/Ubuntu-Bold.ttf),
+         local('Ubuntu Bold'), local('Ubuntu-Bold'),
+         url(https://fonts.gstatic.com/s/ubuntu/v14/4iCv6KVjbNBYlgoCxCvjsGyNPYZvgw.woff2) format('woff2');
+   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+ }
+
+:root {
+   --blu1: rgba(61, 95, 140, 1);
+   --black: rgba(28, 47, 63, 1);
+   --blu2: rgba(149, 171, 191, 1);
+   --orng: rgba(216, 100, 58, 1);
+   --red: rgba(165, 59, 49, 1);
+}
+
+/*----- FONTS -----*/
+/* Domine Normal, Domine Bold, Ubuntu Italic, Ubuntu Normal, Ubuntu Bold */
+
+html {
+   background-color: var(--black);
+   font-size: 10px;
+   width: 100%;
+}
+
+h1 {
+   font-family: 'Ubuntu Bold', sans-serif;
+   font-size: 3rem;
+   color: var(--orng);
+}
+
+h2 {
+   font-family: 'Domine Normal', sans-serif;
+   font-size: 2rem;
+   color: var(--blu2);
+   text-transform: lowercase;
+}
+
+h3 {
+   font-family: 'Ubuntu Normal', sans-serif;
+   font-size: 2rem;
+   color: var(--orng);
+}
+
+h4 {
+   font-family: 'Domine Normal', sans-serif;
+   font-size: 1.25rem;
+   color: var(--orng);
+}
+
+a {
+   text-decoration: none;
+   color: var(--blu2);
+   font-family: 'Ubuntu Normal', sans-serif;
+   font-size: 2rem;
+   text-align: center;
+}
+
+/*----- HEADER -----*/
+#index-container {
+   margin: -10px 0;
+   padding: 5px 0;
+   display: grid;
+   grid-template-rows: auto repeat(2, 1fr);
+   grid-gap: 50px;
+   align-items: center;
+}
+
+#index-container h1 {
+   grid-column: 1 / -1;
+   font-size: 20rem;
+   text-align: center;
+   width: 100%;
+   padding: 10px;
+   box-shadow: 0 0 20px var(--orng), 0 0 10px var(--orng);
+}
+
+#index-months {
+   margin: 20px 5%;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+   grid-template-rows: repeat(3, 1fr);
+   grid-gap: 40px;
+   justify-content: center;
+}
+
+#index-months a {
+   text-transform: uppercase;
+   font-size: 3rem;
+   padding: 50px 20px;
+   box-shadow: 0 0 20px var(--blu1), 0 0 10px var(--blu2);
+}
+
+#jan {
+   display: grid;
+   grid-template-columns: 200px repeat(auto-fit, minmax(220px, 1fr));
+   grid-template-rows: repeat(6, 1fr);
+   grid-gap: 20px;
+   align-items: stretch;
+   justify-items: stretch;
+   justify-content: flex-start;
+   margin-right: 50px;
+   margin-top: 80px;
+}
+
+#jan h1 {
+   font-size: 30rem;
+   transform: rotate(90deg);
+   grid-area: 1 / 1 / 7 / span 1;
+   align-self: flex-start;
+   justify-self: center;
+   z-index: 1;
+   margin-top: 430px;
+}
+
+@media screen and (max-width: 850px) {
+   #index-container {
+      margin-right: -10px;
+      margin-left: -10px;
+   }
+  
+   #index-container h1 {
+      font-size: 8rem;
+   }
+
+   </style>
+
+</body>
+</html>
