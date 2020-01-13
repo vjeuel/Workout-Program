@@ -5,8 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Ubuntu:300i,400,700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" type="text/css" href="css/reset.css">
-   <link rel="stylesheet" type="text/css" href="css/style-month.css">
+   <link rel="stylesheet" type="text/css" href="/css/reset.css">
+   <link rel="stylesheet" type="text/css" href="css/style-feb.css">
+   <link rel="stylesheet" type="text/css" href="/css/stopwatch.css">
    <title>Workout</title>
 </head>
 <body>
@@ -18,1447 +19,2710 @@
       </div>
    </header>
       
-   <!--***** SECTION *****-->
+   <section id="timer-float">
+      <div class="timer-container">
+         <!-- time to add the controls -->
+         <input id="start" name="controls" type="radio" />
+         <input id="stop" name="controls" type="radio" />
+         <input id="reset" name="controls" type="radio" />
+         <div class="timer">
+            <div class="cell">
+               <div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+               <div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+               <div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+               <div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+               <div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+               <div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="timer_controls">
+               <label for="start">S</label>
+            </div>
+            <div class="timer_controls">
+               <!-- <label for="stop">Stop</label> -->
+               <label for="reset">R</label>
+            </div>
+         </div>
+   </section>
+
+   <!--***** SECTION *****-->     
    <section class="month">
       <div class="day">
          <h2>Day 1</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>80</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>2</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>2</h3>
-               <h4>push-ups</h4>
-            </label>
-      </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>80</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>2</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>2</h3>
+                  <h4>push-ups</h4>
+               </label>
+            </div>
+         </div>
       <div class="day">
          <h2>Day 2</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>80</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>16</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>2</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>2</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>            
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>80</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>16</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>2</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>2</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>         
       </div>
       <div class="day">
          <h2>Day 3</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>30</h3>
-            <h4>push-ups</h4>
-         </label>
-      <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>40</h3>
-            <h4>squats</h4>
-         </label>
-      <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>120</h3>
-            <h4>punches</h4>
-         </label>
-     <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>18</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>20</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>      
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+                  <label for="check-workout">
+                     <h3>18</h3>
+                     <h4>squats</h4>
+                  </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 4</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>30</h3>
-            <h4>push-ups</h4>
-         </label>
-      <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>40</h3>
-            <h4>squats</h4>
-         </label>
-      <input type="checkbox" id="check-workout" value="1"/>
-         <label for="check-workout">
-            <h3>120</h3>
-            <h4>overhead punches</h4>
-         </label>
-     <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>8</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>2</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>20</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>      
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>8</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>2</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 5</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>140</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>20</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>140</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>40</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>20</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 6</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>140</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>22</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">   
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>140</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>40</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>22</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 7</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>160</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>24</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
+         <div class="workout">   
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h  3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>160</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>24</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+            <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 8</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>160</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>12</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>4</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>160</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>12</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>4</h3>
+                  <h4>push-ups</h4>
+               </label>
       </div>
+</div>
       <div class="day">
          <h2>Day 9</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>200</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>200</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>26</h3>
                <h4>squats</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>14</h3>
                <h4>push-ups</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>10</h3>
                <h4>squats</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>6</h3>
                <h4>push-ups</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>10</h3>
                <h4>squats</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>4</h3>
                <h4>push-ups</h4>
             </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 10</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
+         <div class="workout">
+             <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>200</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+         <div class="over100">
+            <input type="checkbox" id="over100check" value="1"/>
+               <label for="over100check">
+                  <h3>100</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>28</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>16</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
-               <h3>30</h3>
+               <h3>6</h3>
                <h4>push-ups</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>200</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>28</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>16</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>6</h3>
                <h4>squats</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>4</h3>
                <h4>push-ups</h4>
             </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 11</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>240</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>1</h3>
-               <h4>min plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>240</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>40</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>1</h3>
+                  <h4>min plank</h4>
+               </label>
+         </div>
       </div>
-      <div class="day">
+       <div class="day">
          <h2>Day 12</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>240</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>240</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>40</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>1</h3>
                <h4>min wall sit</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>16</h3>
                <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+               </label>
+         </div>
+         <div class="workout">
+               <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>1</h3>
                <h4>min wall sit</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>8</h3>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>8</h3>
                <h4>push-ups</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>1</h3>
                <h4>min wall sit</h4>
             </label>
-         <input type="checkbox" id="check-workout" value="1"/>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>5</h3>
                <h4>push-ups</h4>
             </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 13</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>260</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>32</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>16</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>260</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>32</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>16</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 14</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>260</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>34</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>18</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>12</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>260</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>34</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>18</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>12</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+      </div>
       </div>
       <div class="day">
          <h2>Day 15</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>300</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>36</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+            </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>300</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>36</h3>
+                  <h4>squats</h4>
+               </label>
+            </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+            </div>
+          <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+            </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+            </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+            </div>
+         <div class="workout">
+               <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 16</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>300</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>80</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>20</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>80</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>80</h3>
-               <h4>sec wall sit</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>300</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>80</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>20</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>80</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>80</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
          <input type="checkbox" id="check-workout" value="1"/>
             <label for="check-workout">
                <h3>5</h3>
                <h4>push-ups</h4>
             </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 17</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>340</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>38</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>22</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>340</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>40</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>38</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>22</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
-      <div class="day">
+   <div class="day">
          <h2>Day 18</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>340</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>24</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>12</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>8</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>340</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+         <div class="over100">
+            <input type="checkbox" id="over100check" value="1"/>
+               <label for="over100check">
+                  <h3>100</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+         <div class="over100">
+            <input type="checkbox" id="over100check" value="1"/>
+               <label for="over100check">
+                  <h3>100</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+         <div class="over100">
+            <input type="checkbox" id="over100check" value="1"/>
+               <label for="over100check">
+                  <h3>100</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+         <div class="over100">
+            <input type="checkbox" id="over100check" value="1"/>
+               <label for="over100check">
+                  <h3>40</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>24</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>12</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>8</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 19</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>380</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>42</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>380</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>80</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>42</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 20</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>380</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>100</h3>
-               <h4>wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>26</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>100</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>14</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>100</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>8</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>380</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>80</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>100</h3>
+                  <h4>wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>26</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>100</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>14</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>100</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>8</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
-      <div class="day">
+   <div class="day">
          <h2>Day 21</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>400</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>44</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>26</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>400</h3>                 <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>44</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>26</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
-      <div class="day">
+   <div class="day">
          <h2>Day 22</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>400</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>46</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>26</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>400</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>46</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>26</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>push-ups</h4>
+               </label>   
+         </div>
       </div>
       <div class="day">
          <h2>Day 23</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>420</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>48</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>420</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>20</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>48</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 24</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>420</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec wall sit</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>90</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>420</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>20</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>         
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec wall sit</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>90</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 25</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>460</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>50</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>460</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>50</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
-         <h2>Day 26</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>460</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>52</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>35</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+      <h2>Day 26</h2>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>460</h3>                 <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>60</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>52</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>35</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         
       </div>
       <div class="day">
-       <h2>Day 27</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>480</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>54</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>6</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
+         <h2>Day 27</h2>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>480</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>80</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>54</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>6</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 28</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>480</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>56</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>15</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>5</h3>
-               <h4>push-ups</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>480</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>80</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>56</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>15</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>5</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 29</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>500</h3>
-               <h4>punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>56</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>10</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>500</h3>
+                  <h4>punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>56</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>10</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
       <div class="day">
          <h2>Day 30</h2>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>30</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>40</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>500</h3>
-               <h4>overhead punches</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>60</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>50</h3>
-               <h4>push-ups</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>20</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>20</h3>
-               <h4>squats</h4>
-            </label>
-         <input type="checkbox" id="check-workout" value="1"/>
-            <label for="check-workout">
-               <h3>120</h3>
-               <h4>sec plank</h4>
-            </label>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>30</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>40</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>500</h3>
+                  <h4>overhead punches</h4>
+               </label>
+         </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+               <div class="over100">
+                  <input type="checkbox" id="over100check" value="1"/>
+                     <label for="over100check">
+                        <h3>100</h3>
+                        <h4>punches</h4>
+                     </label>
+               </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>60</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>50</h3>
+                  <h4>push-ups</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>20</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>20</h3>
+                  <h4>squats</h4>
+               </label>
+         </div>
+         <div class="workout">
+            <input type="checkbox" id="check-workout" value="1"/>
+               <label for="check-workout">
+                  <h3>120</h3>
+                  <h4>sec plank</h4>
+               </label>
+         </div>
       </div>
    </section>
       
@@ -1577,11 +2841,12 @@ a {
 
 /*----- HEADER -----*/
 #month-container {
-   padding: 10px 0;
-   box-shadow: 0 0 20px var(--blu1), 0 0 10px var(--blu2);
-   display: grid;
-   grid-template-columns: 1fr 2fr;
+   display: flex;
+   flex-direction: row;
    align-items: center;
+   justify-content: space-between;
+   padding: 10px 0;
+   box-shadow: 0 0 20px var(--blu1), 0 0 10px var(--blu1);
 }
 
 #month-container h2 {
@@ -1593,22 +2858,19 @@ a {
 #month-container h1 {
    font-size: 10rem;
    text-transform: uppercase;
-   justify-self: flex-end;
    margin-right: 50px;
 }
 
 
 /*----- MONTH -----*/
 .month {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-   grid-template-rows: repeat(6, 1fr);
-   grid-gap: 20px;
-   align-items: stretch;
-   justify-items: stretch;
-   justify-content: flex-start;
-   margin: 50px;
-   margin-top: 80px;
+   margin: 35px;
+   margin-top: 65px;
+   width: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .day {
@@ -1617,48 +2879,68 @@ a {
    padding: 15px 20px;
    border-top-right-radius: 20px;
    border-bottom-left-radius: 20px;
-   display: grid;
-   grid-template-rows: 40px repeat(7, 1fr);
-   grid-template-columns: 40px 1fr;
-   grid-gap: 10px 0;
-   justify-content: flex-start;
-   align-items: center;
+   margin: 15px;
+   min-width: 200px;
+   display: flex;
+   flex-flow: column;
+   
 }
 
+.workout {
+   display: flex;
+   flex-flow: row;
+   margin: 5px 0;
+}
+
+.over100 {
+   margin: 5px 0 5px 30px;
+   display: flex;
+   flex-flow: row;
+}
 
 .day h2 {
-   grid-column: 1 / -1;
-   align-self: flex-start;
+   width: 100%;
    padding-bottom: 8px;
    border-bottom: dotted 1px var(--blu2);
+   margin-bottom: 15px;
+   
 }
 
 .day input {
    height: 20px;
    width: 20px;
+   align-self: center;
+}
 
+.over100 input {
+   height: 15px;
+   width: 15px;
 }
 
 .day label {
-   display: grid;
-   grid-template-columns: 30px 1fr;
-   cursor: pointer;
+   display: flex;
+   flex-flow: row;
 }
 
 .day h3 {
-   justify-self: flex-end;
+   width: 30px;
+   margin: 0 8px;
+   text-align: right;
    align-self: center;
-   padding: 0 10px;
-   
 }
 
 .day h4 {
+   width: 120px;
    align-self: center;
+}
+
+input[type=checkbox]:checked + label * {
+   color: var(--blu2);
 }
 
 footer {
    margin: 20px 0 0 0;
-   padding: 30px;
+   padding:  30px;
    background-color: var(--orng);
    text-transform: uppercase;
 }
@@ -1670,29 +2952,168 @@ footer h1{
 
 @media screen and (max-width: 850px) {
    #month-container {
-      grid-template-columns: none;
-      grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      margin-right: -10px;
-      margin-left: -10px;
-      grid-gap: 5px 0;
-   }
-
-   #month-container h1 {
-      margin: 0;
-      font-size: 5rem;
+      flex-flow: column;
    }
 
    #month-container h2 {
       margin: 0;
-      text-align: center;
+      padding: 10px;
+   }
+
+   #month-container h1 {
+      font-size: 5rem;
+      margin: 0;
    }
 
    .month {
       margin: 20px;
       margin-top: 50px;
-   }
+   }   
+
 }
+
+#timer-float {
+   /* width: 100%; */
+   /* height: 44px; */
+   width: 100%;
+   margin-top: 20px;
+   display: grid;
+   grid-template-columns: 1fr;
+   justify-items: center;
+   position: fixed;
+
+}
+
+.timer-container {
+   padding: 0px;
+   /* text-align: center; */
+
+   width: 280px;
+   /* background-color: var(--black); */
+   z-index: 10;
+
+
+   /* margin-left: 100px; */
+}
+
+.timer {
+   /* padding: 0 10px; */
+   overflow: hidden;
+   display: flex;
+   flex-flow: row;
+   align-items: center;
+	/* border: 1px solid #efefef; */
+	/* border-radius: 5px; */
+	/* position: relative; */
+   
+   border-radius: 20px;
+   background-color: var(--blu2);
+   padding: 10px;
+
+	/* box-shadow: 
+		inset 0 -2px 10px 1px rgba(0, 0, 0, 0.75), 
+      0 5px 20px -10px rgba(0, 0, 0, 1); */
+}
+
+.cell {
+   /*Should only display 1 digit. Hence height = line height of .numbers
+	and width = width of .numbers*/
+	width: 0.60em;
+	height: 40px;
+	font-size: 50px;
+	overflow: hidden;
+	/* position: relative; */
+   /* float: left; */
+}
+
+.numbers {
+	width: 0.6em;
+	line-height: 40px;
+   font-size: 2.5rem;
+	text-align: center;
+   position: relative;
+	/* top: 0; */
+   /* left: 0; */
+   
+   font-family: font-family: 'Ubuntu Normal', sans-serif;
+   color: var(--black);
+	/*Glow to the text*/
+	/* text-shadow: 0 0 5px rgba(255, 255, 255, 1); */
+}
+
+/*Styles for the controls*/
+.timer_controls {
+   /* margin-top: -5px; */
+   
+}
+.timer_controls label {
+	cursor: pointer;
+	padding: 10px;
+	/* font-size: 11px; */
+	/* border-radius: 0 0 3px 3px; */
+   
+   display: flex;
+   justify-content: center;
+   color: var(--blu2);
+	font-family: 'Ubuntu Bold', sans-serif;
+   background-color: var(--black);
+   font-size: 2rem;
+   width: 25px;
+   height: 25px;
+   border-radius: 50%;
+   margin: 0 5px;
+   text-align: center;
+}
+input[name="controls"] {display: none;}
+
+/*Control code*/
+#stop:checked~.timer .numbers {animation-play-state: paused;}
+#start:checked~.timer .numbers {animation-play-state: running;}
+#reset:checked~.timer .numbers {animation: none;}
+
+.moveten {
+	/*The digits move but dont look good. We will use steps now
+	10 digits = 10 steps. You can now see the digits swapping instead of 
+	moving pixel-by-pixel*/
+	animation: moveten 1s steps(10, end) infinite;
+	/*By default animation should be paused*/
+	animation-play-state: paused;
+}
+.movesix {
+	animation: movesix 1s steps(6, end) infinite;
+	animation-play-state: paused;
+}
+
+/*Now we need to sync the animation speed with time speed*/
+/*One second per digit. 10 digits. Hence 10s*/
+.second {animation-duration: 10s;}
+.tensecond {animation-duration: 60s;} /*60 times .second*/
+
+.milisecond {animation-duration: 1s;} /*1/10th of .second*/
+.tenmilisecond {animation-duration: 0.1s;}
+.hundredmilisecond {animation-duration: 0.01s;}
+
+.minute {animation-duration: 600s;} /*60 times .second*/
+.tenminute {animation-duration: 3600s;} /*60 times .minute*/
+
+.hour {animation-duration: 36000s;} /*60 times .minute*/
+.tenhour {animation-duration: 360000s;} /*10 times .hour*/
+
+@keyframes moveten {
+	0% {top: 0;}
+	100% {top: -400px;} 
+	/*height = 40. digits = 10. hence -400 to move it completely to the top*/
+}
+
+@keyframes movesix {
+	0% {top: 0;}
+	100% {top: -240px;} 
+	/*height = 40. digits = 6. hence -240 to move it completely to the top*/
+}
+
+
+
+
    </style>
    
 </body>

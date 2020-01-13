@@ -107,11 +107,12 @@ a {
 
 /*----- HEADER -----*/
 #month-container {
-   padding: 10px 0;
-   box-shadow: 0 0 20px var(--blu1), 0 0 10px var(--blu2);
-   display: grid;
-   grid-template-columns: 1fr 2fr;
+   display: flex;
+   flex-direction: row;
    align-items: center;
+   justify-content: space-between;
+   padding: 10px 0;
+   box-shadow: 0 0 20px var(--blu1), 0 0 10px var(--blu1);
 }
 
 #month-container h2 {
@@ -123,23 +124,19 @@ a {
 #month-container h1 {
    font-size: 10rem;
    text-transform: uppercase;
-   justify-self: flex-end;
    margin-right: 50px;
 }
 
 
 /*----- MONTH -----*/
 .month {
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-   grid-template-rows: repeat(6, 1fr);
-   grid-gap: 30px;
-   align-items: stretch;
-   justify-items: stretch;
-   justify-content: flex-start;
-   grid-auto-flow: row;
-   margin: 50px;
-   margin-top: 80px;
+   margin: 35px;
+   margin-top: 65px;
+   width: auto;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
 }
 
 .day {
@@ -148,48 +145,68 @@ a {
    padding: 15px 20px;
    border-top-right-radius: 20px;
    border-bottom-left-radius: 20px;
-   display: grid;
-   grid-template-rows: 40px repeat(7, 1fr);
-   grid-template-columns: 40px 1fr;
-   grid-gap: 10px 0;
-   justify-content: flex-start;
-   align-items: center;
+   margin: 15px;
+   min-width: 200px;
+   display: flex;
+   flex-flow: column;
+   
 }
 
+.workout {
+   display: flex;
+   flex-flow: row;
+   margin: 5px 0;
+}
+
+.over100 {
+   margin: 5px 0 5px 30px;
+   display: flex;
+   flex-flow: row;
+}
 
 .day h2 {
-   grid-column: 1 / -1;
-   align-self: flex-start;
+   width: 100%;
    padding-bottom: 8px;
    border-bottom: dotted 1px var(--blu2);
+   margin-bottom: 15px;
+   
 }
 
 .day input {
    height: 20px;
    width: 20px;
+   align-self: center;
+}
 
+.over100 input {
+   height: 15px;
+   width: 15px;
 }
 
 .day label {
-   display: grid;
-   grid-template-columns: 30px 1fr;
-   cursor: pointer;
+   display: flex;
+   flex-flow: row;
 }
 
 .day h3 {
-   justify-self: flex-end;
+   width: 30px;
+   margin: 0 8px;
+   text-align: right;
    align-self: center;
-   padding: 0 10px;
-   
 }
 
 .day h4 {
+   width: 120px;
    align-self: center;
+}
+
+input[type=checkbox]:checked + label * {
+   color: var(--blu2);
 }
 
 footer {
    margin: 20px 0 0 0;
-   padding: 30px;
+   padding:  30px;
    background-color: var(--orng);
    text-transform: uppercase;
 }
@@ -201,27 +218,22 @@ footer h1{
 
 @media screen and (max-width: 850px) {
    #month-container {
-      grid-template-columns: none;
-      grid-template-rows: 1fr 1fr;
-      justify-content: center;
-      margin-right: -10px;
-      margin-left: -10px;
-      margin-top: -10px;
-      padding: 5px;
-   }
-
-   #month-container h1 {
-      margin: 0;
-      font-size: 5rem;
+      flex-flow: column;
    }
 
    #month-container h2 {
       margin: 0;
-      text-align: center;
+      padding: 10px;
+   }
+
+   #month-container h1 {
+      font-size: 5rem;
+      margin: 0;
    }
 
    .month {
       margin: 20px;
       margin-top: 50px;
-   }
+   }   
+
 }
