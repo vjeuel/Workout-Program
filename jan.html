@@ -7,6 +7,7 @@
    <link href="https://fonts.googleapis.com/css?family=Domine:400,700|Ubuntu:300i,400,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" type="text/css" href="css/reset.css">
    <link rel="stylesheet" type="text/css" href="css/style-jan.css">
+   <link rel="stylesheet" type="text/css" href="css/stopwatch.css">
    <title>Workout</title>
 </head>
 <body>
@@ -17,6 +18,43 @@
          <h1>January</h1>
       </div>
    </header>
+
+   <section id="timer-float">
+      <div class="timer-container">
+         <!-- time to add the controls -->
+         <input id="start" name="controls" type="radio" />
+         <input id="stop" name="controls" type="radio" />
+         <input id="reset" name="controls" type="radio" />
+         <div class="timer">
+            <div class="cell">
+               <div class="numbers tenhour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell">
+               <div class="numbers hour moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+               <div class="numbers tenminute movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+               <div class="numbers minute moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="cell divider"><div class="numbers">:</div></div>
+            <div class="cell">
+               <div class="numbers tensecond movesix">0 1 2 3 4 5 6</div>
+            </div>
+            <div class="cell">
+               <div class="numbers second moveten">0 1 2 3 4 5 6 7 8 9</div>
+            </div>
+            <div class="timer_controls">
+               <label for="start">S</label>
+            </div>
+            <div class="timer_controls">
+               <!-- <label for="stop">Stop</label> -->
+               <label for="reset">R</label>
+            </div>
+         </div>
+   </section>
       
    <!--***** SECTION *****-->
    <section class="month">
