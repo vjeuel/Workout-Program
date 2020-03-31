@@ -92,17 +92,22 @@ a {
    grid-template-columns: 1fr;
 }
 
+.date {
+   display: grid;
+   grid-template-columns: 4rem 1fr;
+   border-bottom: dotted 1px var(--blu2);
+   margin-bottom: 15px;
+}
+
+.date h2 {
+   width: 90%;
+   padding-bottom: 8px;
+}
+
 .workout {
    display: flex;
    flex-flow: row;
    margin: 5px 0;
-}
-
-.day h2 {
-   width: 90%;
-   padding-bottom: 8px;
-   border-bottom: dotted 1px var(--blu2);
-   margin-bottom: 15px;
 }
 
 .day input {
